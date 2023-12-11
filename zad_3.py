@@ -8,6 +8,7 @@ class Property:
     def display_info(self):
         return f"Property: {self.area} sq. m, {self.rooms} rooms, {self.price} PLN, Address: {self.address}"
 
+
 class House(Property):
     def __init__(self, area, rooms, price, address, plot):
         super().__init__(area, rooms, price, address)
@@ -15,6 +16,7 @@ class House(Property):
 
     def display_info(self):
         return f"House: {super().display_info()}, Plot size: {self.plot} sq. m"
+
 
 class Flat(Property):
     def __init__(self, area, rooms, price, address, floor):
@@ -24,8 +26,8 @@ class Flat(Property):
     def display_info(self):
         return f"Flat: {super().display_info()}, Floor: {self.floor}"
 
-house = House(area=150, rooms=4, price=500000, address="123 Main St", plot=300)
 
+house = House(area=150, rooms=4, price=500000, address="123 Main St", plot=300)
 flat = Flat(area=80, rooms=2, price=250000, address="456 Oak St", floor=2)
 
 print(house.display_info())
