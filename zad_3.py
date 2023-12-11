@@ -1,8 +1,12 @@
-def jezeli(number):
-    return number % 2==0
-num=int(input("Podaj liczbę: "))
-result=jezeli(num)
+def is_even(number):
+    return number % 2 == 0
+
+
+num = int(input("Podaj liczbę: "))
+result = is_even(num)
+
 if result:
-    print("parzysta")
+    print("Liczba jest parzysta.")
 else:
-    print("nieparzysta")
+    print("Liczba jest nieparzysta.")
+    
