@@ -9,4 +9,3 @@ if result:
     print("Liczba jest parzysta.")
 else:
     print("Liczba jest nieparzysta.")
-    
